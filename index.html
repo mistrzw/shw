@@ -542,7 +542,7 @@
         head.style.background = "url(src/bj1.jpg) no-repeat center center"; //设置图片的初始图片为该路径的图片
         function time() {
           i++;
-          i = i % 8 + 1; // 超过12则取余数，保证循环在0-12之间
+          i = i % 8; // 超过12则取余数，保证循环在0-12之间
           head.style.background = "url(" + srcs[i] + ") no-repeat center center";
         }
         setInterval(time, 5000); //循环调用time1()函数，时间间隔为5000ms
